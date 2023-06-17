@@ -19,4 +19,31 @@ addBookToLibrary(book1);
 addBookToLibrary(book2);
 addBookToLibrary(book3);
 addBookToLibrary(book4);
-console.table(myLibrary);
+
+const container = document.querySelector(".container");
+
+myLibrary.forEach((book) => {
+  const card = document.createElement("div");
+  const title = document.createElement("h2");
+  const author = document.createElement("h3");
+  const pages = document.createElement("p");
+  const read = document.createElement("div");
+
+  card.classList.add("card");
+  title.classList.add("title");
+  author.classList.add("author");
+  pages.classList.add("pages");
+  read.classList.add("read");
+
+  title.textContent = book.title;
+  author.textContent = `Author: ${book.author}`;
+  pages.textContent = `Number of pages ${book.noOfPages}`;
+  read.textContent = `Read: ${book.read ? "Yes" : "No"}`;
+
+  card.appendChild(title);
+  card.appendChild(author);
+  card.appendChild(pages);
+  card.appendChild(read);
+
+  container.appendChild(card);
+});
