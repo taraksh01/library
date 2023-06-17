@@ -54,3 +54,12 @@ newBook.addEventListener("click", () => {
     .querySelector(".book-details")
     .setAttribute("style", "visibility: visible");
 });
+
+const addBook = document.querySelector(".add");
+addBook.addEventListener("click", () => {
+  addBookToLibrary(book(title.value, author.value, pages.value, read.value));
+  console.table(myLibrary);
+  document
+    .querySelector(".book-details")
+    .setAttribute("style", "visibility: hidden");
+});
