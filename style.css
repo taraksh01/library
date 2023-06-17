@@ -50,3 +50,33 @@ h1 {
   border: 3px solid rgb(255, 123, 0);
   box-shadow: 3px 3px 4px lightslategray;
 }
+
+.book-details {
+  visibility: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: lightgoldenrodyellow;
+  border: 2px solid yellow;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  font-size: 1.6rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid yellow;
+  font-size: 1.5rem;
+}
+
+.add {
+  padding: 10px;
+  font-size: 20px;
+  width: 20%;
+  align-self: center;
+}
