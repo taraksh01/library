@@ -47,3 +47,10 @@ myLibrary.forEach((book) => {
 
   container.appendChild(card);
 });
+
+const newBook = document.querySelector(".add-book");
+newBook.addEventListener("click", () => {
+  document
+    .querySelector(".book-details")
+    .setAttribute("style", "visibility: visible");
+});
