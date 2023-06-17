@@ -38,3 +38,15 @@ h1 {
   align-self: center;
   border-bottom: 2px solid red;
 }
+
+.add-book {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+  background-color: lightsalmon;
+  border: 3px solid rgb(255, 123, 0);
+  box-shadow: 3px 3px 4px lightslategray;
+}
